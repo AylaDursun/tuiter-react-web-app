@@ -1,0 +1,125 @@
+:root {
+    --border-color: rgb(47, 51, 54);
+    --text-color: white;
+    --main-background-color: black;
+    --secondary-background-color: rgb(33, 35, 39);
+    --additional-text: rgb(110, 118, 125);
+}
+
+body {
+    background-color: var(--main-background-color);
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.wd-title{
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+.wd-username {
+    color: var(--additional-text);
+    font-size: 13px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    border-color: var(--border-color);
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.wd-bookmark {
+    padding: 12px 0 30px 16px;
+    border-color: var(--border-color);
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    clear: both;
+    overflow:auto;
+}
+
+.wd-profile {
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-content {
+    color: var(--text-color);
+    font-size: 15px;
+    float: left;
+    margin-left: 12px;
+}
+
+.wd-name {
+    float: left;
+}
+
+.wd-handle {
+    color: var(--additional-text);
+    float: left;
+    padding-left: 3px;
+}
+
+.wd-main {
+    max-width: 506px;
+    clear: both;
+    padding: 5px 0 12px 0;
+}
+
+.wd-story > img {
+    width: 504px;
+    height: 264px;
+    border-radius: 20px 20px 0 0;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-radius: 20px 20px 0 0;
+}
+
+.wd-story {
+    font-size: 15px;
+    color: var(--additional-text);
+    border-color: var(--border-color);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-radius: 20px;
+    width: 506px;
+}
+
+strong {
+    color: var(--text-color);
+}
+
+.wd-summary {
+    clear: both;
+    width: 480px;
+    padding: 12px;
+    border-radius: 0 0 20px 20px;
+}
+
+.wd-interactions {
+    margin-top: 10px;
+}
+
+.wd-interactions a {
+    color: var(--additional-text);
+    text-decoration: none;
+    display: inline-block;
+    width: 126.5px;
+}
+
+.wd-interactions .wd-heart {
+    color: red;
+}
+
+.wd-symbol {
+    padding-right: 12px;
+    display: inline;
+}
+
+.wd-count {
+    display: inline;
+}
