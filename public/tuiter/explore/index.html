@@ -3,64 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
     <link href="index.css"
           rel="stylesheet"/>
 </head>
 <body>
-    <input placeholder="Search Tuiter" class="wd-search">
-    <a href="explore-settings.html" id="wd-gear">&#x2699</a>
-<ul>
-    <li><a href="">For You</a></li>
-    <li><a href="">Trending</a></li>
-    <li><a href="">COVID-19</a></li>
-    <li><a href="">News</a></li>
-    <li><a href="">Sports</a></li>
-    <li><a href="">Entertainment</a></li>
-</ul>
-<div class="wd-divider"></div>
-<section class="wd-suggested">
-    <div class="wd-post">
-        <div class="wd-topic">Trending in Art</div>
-        <div class="wd-title">AI Art</div>
-        <div class="wd-number">41.6K Tuits</div>
-    </div>
-    <div class="wd-post">
-        <div class="wd-topic">Trending in Space</div>
-        <div class="wd-title">Artemis I</div>
-        <div class="wd-number">38.9K Tuits</div>
-    </div>
-    <div class="wd-post">
-        <div class="wd-left">
-            <div class="wd-author">The Chicago Tribune</div>
-            <div class="wd-timestamp">&#8226; LIVE</div>
-            <div class="wd-title">New Shedd Aquarium Fish</div>
+<div class="row">
+
+</div>
+<div class="row mx-auto wd-main pt-2 px-xl-5 px-lg-1 px-sm-5">
+    <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fab fa-twitter fa-1x"></i><br/>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-home fa-1x me-1"></i>
+                <span class="d-sm-none d-xl-inline">Home</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                <i class="fas fa-hashtag fa-1x me-1"></i>
+                <span class="d-sm-none d-xl-inline">Explore</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-bell fa-1x me-1"></i>
+                <span class="d-sm-none d-xl-inline">Notifications</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-envelope fa-1x me-1"></i>
+                <span class="d-sm-none d-xl-inline">Messages</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-bookmark fa-1x me-1"></i>
+                <span class="d-sm-none d-xl-inline">Bookmarks</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-list fa-1x me-1"></i>
+                <span class="d-sm-none d-xl-inline">Lists</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-user me-1"></i>
+                <span class="d-sm-none d-xl-inline">Profile</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <span class="fa-stack d-inline pe-2 me-3 align-baseline">
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                    <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="d-sm-none d-xl-inline">More</span>
+            </a>
         </div>
-        <img src="Fish.jpg">
+        <button class="btn btn-primary rounded-pill w-100 mt-2">
+            Tuit
+        </button>
     </div>
-    <div class="wd-post">
-        <div class="wd-left">
-            <div class="wd-author">PBS</div>
-            <div class="wd-timestamp">&#8226; Yesterday</div>
-            <div class="wd-title">Cost of Flights Increasing</div>
+    <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+        <div class="row mb-3">
+            <div class="col-sm-10 position-relative">
+                <input type="text" class="form-control rounded-pill d-inline ps-5" placeholder="Search Tuiter" id="search">
+                <i class="fas fa-search position-absolute wd-icon"></i>
+            </div>
+            <label for="search" class="col-sm-2 col-form-label py-0 align-middle my-auto"><a href="#" class="align-middle"><i class="fa fa-cog fa-2x d-inline my-auto"></i></a></label>
         </div>
-        <img src="Flight.jpg">
+        <ul class="nav nav-tabs mb-2">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">For You</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-sm-none d-md-flex" href="#">Entertainment</a>
+            </li>
+        </ul>
+        <img src="spacex.webp" class="w-100 wd-over">
+        <h2 class="fw-bold wd-imageText mb-0">SpaceX's Starship</h2>
+        <ul class="list-group wd-under">
+            <li class="list-group-item d-flex">
+                <div>
+                    <span class="text-muted">Web Development</span>
+                    <div>
+                        <span class="fw-bold">ReactJS</span>
+                        <i class="fas fa-check-circle"></i>
+                        <span class="text-muted"> - 2h</span>
+                    </div>
+                    <span class="fw-bold">React.js is a component base front end library that makes it very easy to build Single Page Applications or SPAs</span>
+                </div>
+                <img src="react.png" class="rounded-3 wd-image float-end ms-1">
+            </li>
+            <li class="list-group-item d-flex">
+                <div>
+                    <div>
+                        <span class="fw-bold">JavaScript</span>
+                        <i class="fas fa-check-circle"></i>
+                        <span class="text-muted"> - 2h</span>
+                    </div>
+                    <span class="fw-bold">JavaScript is programming language that can run on browsers as well as desktops</span><br>
+                    <span class="text-muted">123K Tuits</span>
+                </div>
+                <img src="javascript.webp" class="rounded-3 wd-image float-end">
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="float-start">
+                    <span class="text-muted">Web Development</span>
+                    <div>
+                        <span class="fw-bold">jQuery</span>
+                    </div>
+                    <span class="text-muted">123K Tuits</span>
+                </div>
+                <img src="jquery.png" class="rounded-3 wd-image float-end me-1">
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div>
+                    <span class="text-muted">Web Development</span>
+                    <div>
+                        <span class="fw-bold">NodeJS</span>
+                        <i class="fas fa-check-circle"></i>
+                        <span class="text-muted"> - 2h</span>
+                    </div>
+                    <span class="text-muted">123K Tuits</span>
+                </div>
+                <img src="nodejs.png" class="rounded-3 wd-image float-end me-0">
+            </li>
+        </ul>
+
+
     </div>
-    <div class="wd-post">
-        <div class="wd-left">
-            <div class="wd-topic">Trending in Wisconsin</div>
-            <div class="wd-timestamp">&#8226; Yesterday</div>
-            <div class="wd-title">Kenosha Sunset</div>
-        </div>
-        <img src="Sunset.jpg">
+    <div class="col-xxl-4 col-xl-4 col-lg-4 d-lg-inline d-md-none d-sm-none">
+        <ul class="list-group">
+            <li class="list-group-item fw-bold">Who to follow</li>
+            <li class="list-group-item d-flex">
+                <img src="java.jpg" class="rounded-circle wd-profile me-l-1 me-xl-3 ms-1">
+                <div>
+                    <div class="fw-bold">
+                        Java
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    @Java
+                </div>
+                <button class="btn btn-primary rounded-pill float-right ms-auto h-75 my-auto">
+                    Follow
+                </button>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="relativityspace.webp" class="rounded-circle wd-profile me-sm-1 me-xl-3 ms-1">
+                <div>
+                    <div class="fw-bold">
+                        Relativity Space
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    @relativityspace
+                </div>
+                <button class="btn btn-primary rounded-pill float-right ms-auto h-75 my-auto">
+                    Follow
+                </button>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="virgingalactic.png" class="rounded-circle wd-profile me-sm-1 me-xl-3 ms-1">
+                <div>
+                    <div class="fw-bold">
+                        Virgin Galactic
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    @virgingalactic
+                </div>
+                <button class="btn btn-primary rounded-pill float-right ms-auto h-75 my-auto">
+                    Follow
+                </button>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="nasa.png" class="rounded-circle wd-profile me-sm-1 me-xl-3 ms-1">
+                <div>
+                    <div class="fw-bold">
+                        NASA
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    @NASA
+                </div>
+                <button class="btn btn-primary rounded-pill float-right ms-auto h-75 my-auto">
+                    Follow
+                </button>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="tesla.jpg" class="rounded-circle wd-profile me-sm-1 me-xl-3 ms-1">
+                <div>
+                    <div class="fw-bold">
+                        Tesla
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    @Tesla
+                </div>
+                <button class="btn btn-primary rounded-pill float-right ms-auto h-75 my-auto">
+                    Follow
+                </button>
+            </li>
+        </ul>
     </div>
-    <div class="wd-post">
-        <div class="wd-left">
-            <div class="wd-topic">History</div>
-            <div class="wd-timestamp">&#8226; Today</div>
-            <div class="wd-title">Spoonmaker's Diamond</div>
-        </div>
-        <img src="Diamond.jpg">
-    </div>
-</section>
+</div>
 </body>
 </html>
