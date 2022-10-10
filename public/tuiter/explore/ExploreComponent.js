@@ -28,7 +28,7 @@ const ExploreComponent = () => {
            </ul>
            <!-- image with overlaid text -->
            <img src="../../images/spacex.webp" class="w-100 wd-over">
-           <h2 class="fw-bold wd-imageText mb-0">SpaceX's Starship</h2>
+           <h3 class="fw-bold wd-imageText mb-0">SpaceX's Starship</h3>
            ${PostSummaryList()}
     `);
 }

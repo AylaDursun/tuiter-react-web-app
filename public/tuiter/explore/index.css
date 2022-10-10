@@ -13,10 +13,11 @@ a {
 
 .wd-imageText {
     position: relative;
-    bottom: 45px;
-    left: 6px;
+    bottom: 60px;
+    left: 10px;
     color: white;
     z-index: 1000;
+    color: rgb(30, 30, 30);
 }
 
 .wd-image {
