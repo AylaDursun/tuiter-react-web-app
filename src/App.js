@@ -1,29 +1,22 @@
-import './vendors/bootstrap/css/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
-import HelloWorld from "./components/hello-world";
-import Labs from "./components/labs";
-import Tuiter from "./components/tuiter";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-
+import Labs from "./labs";
+import HelloWorld from "./labs/a6/hello-world";
+import Tuiter from "./tuiter";
+import {BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="container">
                 <Routes>
+                    <Route index element={<Labs/>}/>
                     <Route path="/hello"
-                           exact={true}
                            element={<HelloWorld/>}/>
-                    <Route path="/"
-                           exact={true}
-                           element={<Labs/>}/>
                     <Route path="/tuiter"
-                           exact={true}
                            element={<Tuiter/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
     );
 }
-
 export default App;
