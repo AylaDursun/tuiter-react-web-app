@@ -2,11 +2,18 @@ import React from "react";
 const PostSummaryItem = (
     {
         post = {
+            "_id": 123,
             "topic": "Space",
             "userName": "SpaceX",
-            "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png"
+            "time": "2h",
+            "image": "tesla.jpg",
+            "liked": true,
+            "replies": 345,
+            "retuits": 321,
+            "likes": 1234,
+            "handle": "@spacex",
+            "tuit": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Cybertruck is built with an exterior shell make for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass. Cybertruck is built with an exterior shell make for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass."
         }
     }
 ) => {
