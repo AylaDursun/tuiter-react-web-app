@@ -14,7 +14,6 @@ const TuitsList = () => {
     }, [])
     return(
         <ul className="list-group">
-            <li>Hello</li>
             {
                 loading &&
                 <li className="list-group-item">
@@ -22,11 +21,11 @@ const TuitsList = () => {
                 </li>
             }
             {
-                tuits.map((tuit) =>
-                <TuitItem
-                    key={tuit._id}
-                    tuit={tuit.tuit}
-                />
+                tuits.map(post =>
+                                   <TuitItem
+                                       key={post._id}
+                                       tuit={post}
+                                   />
                 )
             }
         </ul>
