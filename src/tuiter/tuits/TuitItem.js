@@ -10,7 +10,13 @@ const TuitItem = (
             "userName": "SpaceX",
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png"
+            "image": "tesla.png",
+            "likes": 0,
+            "dislikes": 0,
+            "liked": false,
+            "disliked": false,
+            "replies": 0,
+            "retuits": 0
         }
     }
 ) => {

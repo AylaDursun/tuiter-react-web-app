@@ -34,6 +34,27 @@ const TuitStats = ({tuit}) => {
 
             </div>
             <div className="col">
+                {
+                    tuit.disliked &&
+                    <i onClick={() => dispatch(updateTuitThunk({
+                                                                   ...tuit,
+                                                                   dislikes: tuit.dislikes - 1,
+                                                                   disliked: false
+                                                               }))} className="bi bi-hand-thumbs-down me-2 text-danger"></i>
+
+                }
+                {
+                    !tuit.disliked &&
+                    <i onClick={() => dispatch(updateTuitThunk({
+                                                                   ...tuit,
+                                                                   dislikes: tuit.dislikes + 1,
+                                                                   disliked: true
+                                                               }))} className="bi bi-hand-thumbs-down me-2"></i>
+                }
+                {tuit.dislikes}
+
+            </div>
+            <div className="col">
                 <i className="bi bi-share"></i>
             </div>
         </div>
